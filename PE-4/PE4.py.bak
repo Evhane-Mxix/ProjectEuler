@@ -1,0 +1,26 @@
+def Palindromer(inputNum):
+    inputString = str(inputNum)
+    x = 0
+    isPalindrome = True
+    while x < len(inputString) / 2:
+        if(inputString[x] != inputString[-(x+1)]):
+            isPalindrome = False
+        x = x + 1
+    if isPalindrome:
+        print(inputNum)
+
+
+num1 = 100
+num2 = 100
+while num1 < 1000:
+    num2 = 100
+    while num2 < 1000:
+        product = num1 * num2
+        Palindromer(product)
+        num2 = num2 + 1
+    num1 = num1 + 1
+
+while True:
+    print
+    
+    

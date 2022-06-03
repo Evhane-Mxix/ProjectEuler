@@ -1,0 +1,15 @@
+num = 600851475143
+iNum = 2
+
+while(num > iNum):
+    if(num % iNum == 0):
+        num = num / iNum
+        iNum = 2
+    else:
+        iNum = iNum + 1
+    
+print(iNum)
+
+
+while True:
+    print
